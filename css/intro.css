@@ -18,16 +18,12 @@
 }
 
 .intro__text {
-  margin: 0 auto;
+  margin: 0 auto 56px auto;
   max-width: 1080px;
 }
 
-.intro__paragraph-1-wrapper {
+.intro__paragraph-wrapper:not(:last-child) {
   margin-bottom: 30px;
-}
-
-.intro__paragraph-2-wrapper {
-  margin-bottom: 56px;
 }
 
 .intro__paragraph {
@@ -36,8 +32,7 @@
 
 .intro__contents {
   max-width: 1140px;
-  padding-left: 45px;
-  padding-top: 25px;
+  padding: 25px 0 25px 45px;
   background-color: #F1F1F1;
 }
 
@@ -49,7 +44,6 @@
 
 .intro__contents-list-wrapper {
   padding-left: 30px;
-  padding-bottom: 25px;
 }
 
 .intro__contents-list {
