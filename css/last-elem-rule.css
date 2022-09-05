@@ -1,0 +1,22 @@
+.last-elem-rule-container {
+  margin-bottom: 50px;
+  max-width: 1080px;
+}
+
+.last-elem-rule__title-wrapper {
+  margin-bottom: 30px;
+}
+
+.last-elem-rule__content-paragraph {
+  margin-bottom: 30px;
+}
+
+.last-elem-rule__image-wrapper {
+  margin-bottom: 30px;
+}
+
+.last-elem-rule__image {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}

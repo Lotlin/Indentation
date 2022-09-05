@@ -1,0 +1,22 @@
+.dom-rule__container {
+  max-width: 1080px;
+  margin-bottom: 50px;
+}
+
+.dom-rule__title-wrapper {
+  margin-bottom: 30px;
+}
+
+.dom-rule__content-paragraph {
+  margin-bottom: 30px;
+}
+
+.dom-rule__image-wrapper {
+  margin-bottom: 30px;
+}
+
+.dom-rule__image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

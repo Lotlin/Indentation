@@ -1,0 +1,50 @@
+.elem-rule__container {
+  max-width: 1080px;
+}
+
+.elem-rule__title-wrapper {
+  margin-bottom: 30px;
+}
+
+.elem-rule__margin {
+  margin-bottom: 30px;
+}
+.elem-rule__margin-item {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.elem-rule__image-margin-container {
+  margin-right: 25px;
+  max-width: 560px;
+}
+
+.elem-rule__margin-text {
+  max-width: 490px;
+}
+
+.elem-rule__margin-text-paragraph:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.elem-rule__padding {
+  margin-bottom: 50px;
+}
+
+.elem-rule__padding-item {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.elem-rule__padding-text {
+  margin-right: 35px;
+  max-width: 480px;
+}
+
+.elem-rule__padding-text-paragraph:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.elem-rule__image-padding-container {
+  max-width: 560px;
+}

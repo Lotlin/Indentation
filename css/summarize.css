@@ -1,0 +1,26 @@
+.summarize__container {
+  padding-top: 25px;
+  padding-left: 45px;
+  padding-bottom: 25px;
+  background-color: #f1f1f1;
+}
+
+.summarize__title-wrapper {
+  margin-bottom: 25px;
+}
+
+.summarize__list {
+  margin-bottom: 30px;
+}
+
+.summarize__item::before {
+  content: "—";
+}
+
+.summarize__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.summarize__content-paragraph--width {
+  max-width: 998px;
+}

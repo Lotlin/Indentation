@@ -1,0 +1,50 @@
+@import "normalize.css";
+@import "global.css";
+@import "intro.css";
+@import "elem-rule.css";
+@import "dom-rule.css";
+@import "last-elem-rule.css";
+@import "summarize.css";
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'),
+  url('../fonts/roboto-v30-latin_cyrillic-regular.woff2') format('woff2'),
+  url('../fonts/roboto-v30-latin_cyrillic-regular.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto'),
+  url('../fonts/roboto-v30-latin_cyrillic-700.woff2') format('woff2'),
+  url('../fonts/roboto-v30-latin_cyrillic-700.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Roboto'),
+  url('../fonts/roboto-v30-latin_cyrillic-900.woff2') format('woff2'),
+  url('../fonts/roboto-v30-latin_cyrillic-900.woff') format('woff');
+  font-display: swap;
+}
+
+.indentation__rules-title {
+  font-weight: 900;
+  font-size: 36px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
