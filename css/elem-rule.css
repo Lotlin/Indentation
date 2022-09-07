@@ -1,20 +1,22 @@
-.elem-rule__container {
-  max-width: 1080px;
+.elem-rule {
+  padding-top: 28px;
+  padding-bottom: 25px;
 }
 
-.elem-rule__title-wrapper {
+.elem-rule__title {
   margin-bottom: 30px;
 }
 
 .elem-rule__margin {
   margin-bottom: 30px;
 }
+
 .elem-rule__margin-item {
   display: inline-block;
   vertical-align: top;
 }
 
-.elem-rule__image-margin-container {
+.elem-rule__image-margin {
   margin-right: 25px;
   max-width: 560px;
 }
@@ -25,10 +27,6 @@
 
 .elem-rule__margin-text-paragraph:not(:last-child) {
   margin-bottom: 30px;
-}
-
-.elem-rule__padding {
-  margin-bottom: 50px;
 }
 
 .elem-rule__padding-item {
@@ -45,6 +43,6 @@
   margin-bottom: 30px;
 }
 
-.elem-rule__image-padding-container {
+.elem-rule__image-padding {
   max-width: 560px;
 }

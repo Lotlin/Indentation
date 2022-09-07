@@ -1,11 +1,9 @@
-.summarize__container {
+.summarize {
   padding-top: 25px;
-  padding-left: 45px;
-  padding-bottom: 25px;
-  background-color: #f1f1f1;
+  padding-bottom: 50px;
 }
 
-.summarize__title-wrapper {
+.summarize__title {
   margin-bottom: 25px;
 }
 

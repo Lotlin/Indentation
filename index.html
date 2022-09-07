@@ -11,216 +11,163 @@
 <body>
   <article class="indentation">
     <div class="indentation__intro intro">
-      <div class="container intro__container">
-        <div class="intro__title-wrapper">
-          <h1 class="intro__title">Отступы в вёрстке: margin и padding</h1>
-        </div>
+      <div class="container">
+        <h1 class="intro__title">Отступы в вёрстке: margin и padding</h1>
         <div class="intro__text">
-          <div class="intro__paragraph-wrapper">
             <p class="intro__paragraph">
               В этой статье я рассмотрю самые популярные "стандартные" решения для сохранения смысла и хорошей читаемости вашего кода. Если точнее — речь пойдет об основных правилах организации отступов. Они сильно влияют на общую функциональность кода и, если всё сделано верно, позволяют легко вносить изменения в любую его часть. При этом другие части кода продолжат нормально работать.
             </p>
-          </div>
-          <div class="intro__paragraph-wrapper">
             <p class="intro__paragraph">
               Как это часто бывает, знание базовых принципов поможет проявить гибкость и выйти за их пределы. Эти знания особенно важны для начинающих, но также будут полезным напоминанием и для более опытных верстальщиков. Итак, поговорим о фундаментальных основах работы с отступами в вёрстке.
             </p>
-          </div>
         </div>
-        <nav class="intro__contents">
-          <h2 class="intro__contents-title">
-            Содержание:
-          </h2>
-          <div class="intro__contents-list-wrapper">
-            <ol class="intro__contents-list">
-              <li class="intro__contents-item" >
-                <a class="intro__contents-link" href="#first">Отступ задается от предыдущего элемента к следующему</a>
-              </li>
-              <li class="intro__contents-item">
-                <a class="intro__contents-link" href="#second">Отступ задается последнему возможному элементу в DOM-дереве</a>
-              </li>
-              <li class="intro__contents-item">
-                <a class="intro__contents-link" href="#third">Для последнего элемента группы отступ обнуляется</a>
-              </li>
-            </ol>
-          </div>
+      </div>
+      <div class="container-gris">
+        <h2 class="intro__contents-title">
+          Содержание:
+        </h2>
+        <nav class="intro__contents-menu">
+          <ol class="intro__contents-list">
+            <li class="intro__contents-item" >
+              <a class="intro__contents-link" href="#first">Отступ задается от предыдущего элемента к следующему</a>
+            </li>
+            <li class="intro__contents-item">
+              <a class="intro__contents-link" href="#second">Отступ задается последнему возможному элементу в DOM-дереве</a>
+            </li>
+            <li class="intro__contents-item">
+              <a class="intro__contents-link" href="#third">Для последнего элемента группы отступ обнуляется</a>
+            </li>
+          </ol>
         </nav>
       </div>
     </div>
 
     <section class="indentation__rules elem-rule" id="first">
-      <div class="container elem-rule__container">
-        <div class="elem-rule__title-wrapper">
-          <h3 class="indentation__rules-title elem-rule__title">
-            Отступ задается от предыдущего элемента к следующему: от первого ко второму, сверху вниз, слева направо.
-          </h3>
-        </div>
-        <div class="indentation__rules-content elem-rule__content">
-          <div class="elem-rule__margin">
-            <div class="elem-rule__margin-item elem-rule__image-margin-container">
-              <img class="elem-rule__image-margin" src="images/cats_margin.jpg" alt="фото с котами, иллюстрирующее пример использования свойств margin-right и margin-bottom">
-            </div>
-            <div class="elem-rule__margin-item elem-rule__margin-text">
-              <p class="elem-rule__margin-text-paragraph">
-                <span class="bold">ВАЖНО:</span> <span class="italic">margin</span>  всегда задают от предыдущего элемента к следующему.
-              </p>
-              <p class="elem-rule__margin-text-paragraph">
-                Свойство <span class="italic">margin</span> необходимо только для того, чтобы отодвинуть своего соседа справа или снизу, поэтому используется <span class="italic">margin-right</span> и <span class="italic">margin-bottom</span>.
-              </p>
-              <p class="elem-rule__margin-text-paragraph">
-                (!) Свойства <span class="italic">margin-left</span> и <span class="italic">margin-top</span> используются крайне редко.
-              </p>
-              <p class="elem-rule__margin-text-paragraph">
-                Для <span class="italic">padding</span> верно обратное. Исключением является его применения в декоративных целях, например, для увеличения области ссылки.
-              </p>
-            </div>
-          </div>
-          <div class="elem-rule__padding">
-            <div class="elem-rule__padding-item elem-rule__padding-text">
-              <p class="elem-rule__padding-text-paragraph">
-                Отступ внутри блока сверху или слева реализуется через <span class="italic">padding-top</span> и <span class="italic">padding-left</span> родителя.
-              </p>
-              <p class="elem-rule__padding-text-paragraph">
-                Отступы, как правило, делают в направлении от предыдущего элемента к следующему. Так элемент не будет толкать сам себя.
-              </p>
-              <p class="elem-rule__padding-text-paragraph">
-                Изначально элемент статичен, а его положение может меняться только под воздействием свойств других блоков или свойств родителя.
-              </p>
-            </div>
-            <div class="elem-rule__padding-item elem-rule__image-padding-container">
-              <img class="elem-rule__image-padding" src="images/cat_padding.png" alt="фото с котом, иллюстрирующее пример использования свойства padding-top">
-            </div>
+      <div class="container">
+        <h3 class="indentation__rules-title elem-rule__title">
+          Отступ задается от предыдущего элемента к следующему: от первого ко второму, сверху вниз, слева направо.
+        </h3>
+        <div class="elem-rule__margin">
+          <img class="elem-rule__margin-item elem-rule__image-margin" src="images/cats_margin.jpg" alt="фото с котами, иллюстрирующее пример использования свойств margin-right и margin-bottom">
+          <div class="elem-rule__margin-item elem-rule__margin-text">
+            <p class="elem-rule__margin-text-paragraph">
+              <span class="bold">ВАЖНО:</span> <span class="italic">margin</span>  всегда задают от предыдущего элемента к следующему.
+            </p>
+            <p class="elem-rule__margin-text-paragraph">
+              Свойство <span class="italic">margin</span> необходимо только для того, чтобы отодвинуть своего соседа справа или снизу, поэтому используется <span class="italic">margin-right</span> и <span class="italic">margin-bottom</span>.
+            </p>
+            <p class="elem-rule__margin-text-paragraph">
+              (!) Свойства <span class="italic">margin-left</span> и <span class="italic">margin-top</span> используются крайне редко.
+            </p>
+            <p class="elem-rule__margin-text-paragraph">
+              Для <span class="italic">padding</span> верно обратное. Исключением является его применения в декоративных целях, например, для увеличения области ссылки.
+            </p>
           </div>
         </div>
+        <div class="elem-rule__padding-item elem-rule__padding-text">
+          <p class="elem-rule__padding-text-paragraph">
+            Отступ внутри блока сверху или слева реализуется через <span class="italic">padding-top</span> и <span class="italic">padding-left</span> родителя.
+          </p>
+          <p class="elem-rule__padding-text-paragraph">
+            Отступы, как правило, делают в направлении от предыдущего элемента к следующему. Так элемент не будет толкать сам себя.
+          </p>
+          <p class="elem-rule__padding-text-paragraph">
+            Изначально элемент статичен, а его положение может меняться только под воздействием свойств других блоков или свойств родителя.
+          </p>
+        </div>
+        <img class="elem-rule__padding-item elem-rule__image-padding" src="images/cat_padding.png" alt="фото с котом, иллюстрирующее пример использования свойства padding-top">
       </div>
     </section>
 
     <section class="indentation__rules dom-rule" id="second">
-      <div class="container dom-rule__container">
-        <div class="dom-rule__title-wrapper">
-          <h3 class="indentation__rules-title dom-rule__title">
-            Отступ задается последнему возможному элементу в DOM-дереве
-          </h3>
-        </div>
-        <div class="indentation__rules-content dom-rule__content">
-          <p class="dom-rule__content-paragraph">
-            Вообще, margin задают исключительно между соседними элементами DOM-дерева. Для примера, посмотрите на этот список:
-          </p>
-          <div class="dom-rule__image-wrapper">
-            <img class="dom-rule__image" src="images/dom_code.jpg" alt="пример кода">
-          </div>
-          <div class="dom-rule__image-wrapper dom-rule__image-recipe-wrapper">
-            <img class="dom-rule__image" src="images/dom_recipe.jpg" alt="пример кода">
-          </div>
-          <p class="dom-rule__content-paragraph">
-            Отступ делают за счёт соседних элементов, а не дочерних:
-          </p>
-          <div class="dom-rule__image-wrapper">
-            <img class="dom-rule__image" src="images/dom_rec_and_code.png" alt="пример кода">
-          </div>
-        </div>
+      <div class="container">
+        <h3 class="indentation__rules-title dom-rule__title">
+          Отступ задается последнему возможному элементу в DOM-дереве
+        </h3>
+        <p class="dom-rule__content-paragraph">
+          Вообще, margin задают исключительно между соседними элементами DOM-дерева. Для примера, посмотрите на этот список:
+        </p>
+        <img class="dom-rule__image" src="images/dom_code.jpg" alt="пример кода">
+        <img class="dom-rule__image" src="images/dom_recipe.jpg" alt="пример кода">
+        <p class="dom-rule__content-paragraph">
+          Отступ делают за счёт соседних элементов, а не дочерних:
+        </p>
+        <img class="dom-rule__image" src="images/dom_rec_and_code.png" alt="пример кода">
         <p class="dom-rule__content-paragraph">
           Казалось бы, можно задать отступ параграфу &lt;p&gt;, либо обёртке &lt;article&gt; для достижения той же цели. Внешне останется все точно также, но так делать не рекомендуется.
         </p>
         <p class="dom-rule__content-paragraph">
           Предыдущий пример был достаточно простым, но бывает вложенность значительно больше.
         </p>
-        <div class="dom-rule__image-wrapper">
-          <img class="dom-rule__image" src="images/dom_nesting.jpg" alt="пример кода с вложенностью (заголовок h2 вложен в div, который вложен в section">
-        </div>
+        <img class="dom-rule__image" src="images/dom_nesting.jpg" alt="пример кода с вложенностью (заголовок h2 вложен в div, который вложен в section">
         <p class="dom-rule__content-paragraph">
           В случае с заголовком, если ему необходим отступ сверху, последним элементом будет section. Именно для него задается padding-top, а не div с классом container. Свойства margin, которые стоят по умолчанию необходимо обнулить.
         </p>
-        <div class="dom-rule__image-wrapper">
-          <img class="dom-rule__image" src="images/dom_header_padding.jpg" alt="пример кода с padding для заголовка">
-        </div>
-        <p class="dom-rule__content-paragraph">
+        <img class="dom-rule__image" src="images/dom_header_padding.jpg" alt="пример кода с padding для заголовка">
+        <p>
           Это необходимо для более простого поиска отступов в будущем — для вас или того, кто будет верстать после вас. Кроме того, возможны серьёзные проблемы при динамическом дублировании или выводе вёрстки с нестандартной структурой отступов.
         </p>
       </div>
     </section>
 
     <section class="indentation__rules last-elem-rule" id="third">
-      <div class="container last-elem-rule-container">
-        <div class="last-elem-rule__title-wrapper">
-          <h3 class="indentation__rules-title last-elem-rule__title">
-            Для последнего элемента группы отступ всегда обнуляется
-          </h3>
-        </div>
-        <div class="indentation__rules-content last-elem-rule__content">
+      <div class="container">
+        <h3 class="indentation__rules-title last-elem-rule__title">
+          Для последнего элемента группы отступ всегда обнуляется
+        </h3>
           <p class="last-elem-rule__content-paragraph">
             Для наглядности возьмём наш предыдущий пример с рецептами
           </p>
           <p class="last-elem-rule__content-paragraph">
             Между рецептами расстояние одинаковое. Можно заметить, что и до следующего блока расстояние такое же.
           </p>
-          <div class="last-elem-rule__image-wrapper">
-            <img class="last-elem-rule__image" src="images/last_elem_healthy_recipe.jpg" alt="пример с рецептами, стрелками указаны расстояния между рецептами">
-          </div>
+          <img class="last-elem-rule__image" src="images/last_elem_healthy_recipe.jpg" alt="пример с рецептами, стрелками указаны расстояния между рецептами">
           <p class="last-elem-rule__content-paragraph">
             В соответствии со вторым принципом: последний <span class="italic">margin</span> обнуляется, а нижний отступ задаётся через <span class="italic">padding</span> для <span class="italic">section</span>. Я чаще всего задаю <span class="italic">padding</span> для секции с обоих сторон, если расстояние между секциями 100px задаю секциям <span class="italic">padding-top:50px</span> и <span class="italic">padding-bottom:50px</span>.
           </p>
-          <div class="last-elem-rule__image-wrapper">
-            <img class="last-elem-rule__image" src="images/last_elem_recipe.jpg" alt="пример с рецептами, у последнего рецепта отсутствует padding">
-          </div>
-          <div class="last-elem-rule__image-wrapper">
-            <img class="last-elem-rule__image" src="images/last_elem_code.jpg" alt="пример HTML с рецептами">
-          </div>
+          <img class="last-elem-rule__image" src="images/last_elem_recipe.jpg" alt="пример с рецептами, у последнего рецепта отсутствует padding">
+          <img class="last-elem-rule__image" src="images/last_elem_code.jpg" alt="пример HTML с рецептами">
           <p class="last-elem-rule__content-paragraph">
             Для большего понимания рассмотрим другой пример, который часто встречается на практике:
           </p>
-          <div class="last-elem-rule__image-wrapper">
-            <img class="last-elem-rule__image" src="images/last_elem_methed.jpg" alt="шапка с меню сайта Methed">
-          </div>
-          <div class="last-elem-rule__image-wrapper">
-            <img class="last-elem-rule__image" src="images/last_elem_meth_html.jpg" alt="пример HTML меню сайта Methed">
-          </div>
+          <img class="last-elem-rule__image" src="images/last_elem_methed.jpg" alt="шапка с меню сайта Methed">
+          <img class="last-elem-rule__image" src="images/last_elem_meth_html.jpg" alt="пример HTML меню сайта Methed">
           <p class="last-elem-rule__content-paragraph">
             Здесь нас интересует отступ между пунктами меню и списком с кнопкой поиска. Отступы между пунктами меню задаются так:
           </p>
-          <div class="last-elem-rule__image-wrapper">
-            <img class="last-elem-rule__image" src="images/last_elem_margin-right.jpg" alt="пример HTML, для отступа использован margin-right">
-          </div>
+          <img class="last-elem-rule__image" src="images/last_elem_margin-right.jpg" alt="пример HTML, для отступа использован margin-right">
           <p class="last-elem-rule__content-paragraph">
             Советую использовать псевдоклассы :last-child чаще других, например так:
           </p>
-          <div class="last-elem-rule__image-wrapper">
-            <img class="last-elem-rule__image" src="images/last_elem_last-child.jpg" alt="пример HTML, для отступа использован margin-right для всех элементов меню, кроме last-child">
-          </div>
+          <img class="last-elem-rule__image last-image" src="images/last_elem_last-child.jpg" alt="пример HTML, для отступа использован margin-right для всех элементов меню, кроме last-child">
         </div>
-      </div>
     </section>
 
-
     <section class="indentation__rules summarize">
-      <div class="container summarize__container">
-        <div class="summarize__title-wrapper">
-          <h3 class="indentation__rules-title summarize__title">
-            Подытожим:
-          </h3>
-        </div>
-        <div class="indentation__rules-content summarize__content">
-          <ul class="summarize__list">
-            <li class="summarize__item">
-              отступы задаём от предыдущего элемента к следующему
-            </li>
-            <li class="summarize__item">
-              используем только margin-right и margin-bottom
-            </li>
-            <li class="summarize__item">
-              внешние отступы задаются только между соседями
-            </li>
-            <li class="summarize__item">
-              внутренний отступ задаём самому верхнему элементу в дом дереве
-            </li>
-            <li class="summarize__item">
-              последнему элементу группы отступ всегда обнуляем
-            </li>
-          </ul>
-          <p class="summarize__content-paragraph summarize__content-paragraph--width">
-            Конечно бывают исключения. Ведь макеты бывают различной сложности. Иногда базовые принципы приходится нарушать в угоду дизайнерского решения или простоты вёрстки. Но для этого эти принципы необходимо хорошо знать.
-          </p>
-        </div>
+      <div class="container-gris">
+        <h3 class="indentation__rules-title summarize__title">
+          Подытожим:
+        </h3>
+        <ul class="summarize__list">
+          <li class="summarize__item">
+            отступы задаём от предыдущего элемента к следующему
+          </li>
+          <li class="summarize__item">
+            используем только margin-right и margin-bottom
+          </li>
+          <li class="summarize__item">
+            внешние отступы задаются только между соседями
+          </li>
+          <li class="summarize__item">
+            внутренний отступ задаём самому верхнему элементу в дом дереве
+          </li>
+          <li class="summarize__item">
+            последнему элементу группы отступ всегда обнуляем
+          </li>
+        </ul>
+        <p class="summarize__content-paragraph summarize__content-paragraph--width">
+          Конечно бывают исключения. Ведь макеты бывают различной сложности. Иногда базовые принципы приходится нарушать в угоду дизайнерского решения или простоты вёрстки. Но для этого эти принципы необходимо хорошо знать.
+        </p>
       </div>
     </section>
 

@@ -50,5 +50,25 @@ p {
 
 .container {
   margin: 0 auto;
+  max-width: 1080px;
+}
+
+.container-gris {
   max-width: 1140px;
+  margin: 0 auto;
+  padding: 25px 0 25px 45px;
+  background-color: #F1F1F1;
+}
+
+.indentation__rules-title {
+  font-weight: 900;
+  font-size: 36px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
 }

@@ -1,17 +1,12 @@
 .intro {
   padding-top: 60px;
-}
-
-.intro__container {
-  margin-bottom: 56px;
-}
-
-.intro__title-wrapper {
-  margin: 0 auto 30px auto;
-  max-width: 1080px;
+  padding-bottom: 28px;
 }
 
 .intro__title {
+  margin: 0 auto 30px auto;
+  max-width: 1080px;
+
   font-weight: 900;
   font-size: 60px;
   line-height: 120%;
@@ -22,18 +17,12 @@
   max-width: 1080px;
 }
 
-.intro__paragraph-wrapper:not(:last-child) {
-  margin-bottom: 30px;
-}
-
 .intro__paragraph {
   line-height: 120%;
 }
 
-.intro__contents {
-  max-width: 1140px;
-  padding: 25px 0 25px 45px;
-  background-color: #F1F1F1;
+.intro__paragraph:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .intro__contents-title {
@@ -42,7 +31,7 @@
   font-size: 44px;
 }
 
-.intro__contents-list-wrapper {
+.intro__contents-menu {
   padding-left: 30px;
 }
 
